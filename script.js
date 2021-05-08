@@ -2,6 +2,13 @@
 const toggleSwitch = document.querySelector('input[type ="checkbox"]');
 const toggleIcon = document.getElementById("toggle-icon");
 const nav = document.getElementById("nav");
+const photoContainer = document.querySelector(".photograph-container");
+let html;
+for (let i = 1; i <= 21; i++) {
+  html = html + `<img class="photo" src="image/image-${i}.jpg" alt="" />`;
+}
+
+photoContainer.insertAdjacentHTML("afterbegin", html);
 
 function toggleMode(theme) {
   nav.style.backgroundColor = `${
