@@ -3,10 +3,10 @@ const toggleSwitch = document.querySelector('input[type ="checkbox"]');
 const toggleIcon = document.getElementById("toggle-icon");
 const nav = document.getElementById("nav");
 const photoContainer = document.querySelector(".photograph-container");
-let html = "";
-for (let i = 1; i <= 21; i++) {
-  html = html + `<img class="photo" src="image/image-${i}.jpg" alt="" />\n`;
-}
+// let html = "";
+// for (let i = 1; i <= 30; i++) {
+//   html = html + `<img class="photo" src="image/image-${i}.jpg" alt="" />\n`;
+// }
 
 photoContainer.insertAdjacentHTML("afterbegin", html);
 
